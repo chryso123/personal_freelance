@@ -1,6 +1,14 @@
 <?php require_once('config.php'); ?>
  <!DOCTYPE html>
 <html lang="en" class="" style="height: auto;">
+<style type="text/css">
+<!--
+.style1 {
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+-->
+</style>
 <?php require_once('inc/header.php') ?>
   <body>
 
@@ -218,35 +226,43 @@ while($row = $c_qry->fetch_assoc()){
 
          <div class="twelve columns collapsed">
 
-            <h1>Check Out Some of My Works.</h1>
-
+            <h1><a href="http://localhost/Tourism%20management%20system/Tourism%20management%20system/tms/#home">Check Out Some of My Works.</a></h1>
+            <p align="left" class="style1">   <a href="http://localhost/Tourism management system/Tourism management system/tms/#home">RWANDA GLOBAL TRAVELS </a></p>
+            <a href="http://localhost/Tourism%20management%20system/Tourism%20management%20system/tms/#home">
             <!-- portfolio-wrapper -->
+            </a>
             <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
-               <?php 
+                 <a href="http://localhost/Tourism%20management%20system/Tourism%20management%20system/tms/#home">
+                 <?php 
                   $p_qry = $conn->query("SELECT * FROM project ");
                   while($row = $p_qry->fetch_assoc()):
                   ?>
+                 </a>
                  <div class="columns portfolio-item">
                     <div class="item-wrap">
-
-                       <a href="#modal-<?php echo $row['id'] ?>" title="">
-                          <img alt="" src="<?php echo validate_image($row['banner']) ?>">
-                          <div class="overlay">
-                             <div class="portfolio-item-meta">
-                            <h5 class="truncate-1"><?php echo $row['name'] ?></h5>
+                         <a href="http://localhost/Tourism%20management%20system/Tourism%20management%20system/tms/#home"><img alt="" src="<?php echo validate_image($row['banner']) ?>">
+                      </a>
+                         <div class="overlay">
+                            <div class="portfolio-item-meta">
+                            <h5 class="truncate-1"><a href="http://localhost/Tourism%20management%20system/Tourism%20management%20system/tms/#home"><?php echo $row['name'] ?></a></h5>
+                                <a href="http://localhost/Tourism%20management%20system/Tourism%20management%20system/tms/#home">
                                 <!-- <p>Illustrration</p> -->
+                                </a></div>
                          </div>
-                          </div>
-                          <div class="link-icon"><i class="icon-plus"></i></div>
-                       </a>
+                         <div class="link-icon"></div>
                     </div>
-                </div> <!-- item end -->
+                </div> 
+                 <a href="http://localhost/Tourism%20management%20system/Tourism%20management%20system/tms/#home">
+              <!-- item end -->
 
               <?php endwhile; ?>
 
-            </div> <!-- portfolio-wrapper end -->
+                 </a></div> 
+            <a href="http://localhost/Tourism%20management%20system/Tourism%20management%20system/tms/#home">
+            <!-- portfolio-wrapper end -->
 
-         </div> <!-- twelve columns end -->
+            </a></div> 
+         <!-- twelve columns end -->
 
 
           <?php 
